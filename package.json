@@ -1,12 +1,10 @@
 {
   "name": "medical-systems-api",
   "version": "1.0.0",
-  "description": "A complete API using Fastify, MongoDB (Mongoose) with modular auto-loading and Swagger documentation",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,10 +18,13 @@
     "url": "https://github.com/bfrpaulondev/medical-systems-api/issues"
   },
   "homepage": "https://github.com/bfrpaulondev/medical-systems-api#readme",
+  "description": "",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
+    "bcrypt": "^5.1.1",
     "fastify": "^5.2.1",
-    "fastify-swagger": "^5.1.1",
+    "fastify-autoload": "^3.13.0",
+    "fastify-plugin": "^5.0.1",
+    "fastify-swagger": "^5.2.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.10.0",
     "nodemon": "^3.1.9"
